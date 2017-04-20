@@ -3,16 +3,8 @@ os: linux
 files:
    - source: /AntExample.war
      destination: /var/lib/tomcat7/webapps/
-   - source: /tomcat-users.xml
-     destination: /var/lib/tomcat7/conf/
-permissions:
-   - object: /var/www/html
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 755
-     type:
-       - file
+  
+
 hooks:
    BeforeInstall:
     - location: scripts/installtomcat.sh
