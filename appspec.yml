@@ -4,7 +4,7 @@ files:
    - source: /AntExample.war
      destination: /var/lib/tomcat7/webapps/
    - source: /tomcat-users.xml
-     destination: /var/lib/tomcat7/conf/tomcat-users.xml
+     destination: /var/lib/tomcat7/conf/
 permissions:
    - object: /var/www/html
      pattern: "**"
