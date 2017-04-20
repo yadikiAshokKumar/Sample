@@ -15,6 +15,6 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-    - location: Sample/scripts/installtomcat.sh
+    - location: scripts/installtomcat.sh
       runas: root
    
