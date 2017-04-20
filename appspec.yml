@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+   - source: /AntExample.war
+     destination: /var/lib/tomcat7/webapps/
+   - source: /tomcat-users.xml
+     destination: /var/lib/tomcat7/conf/tomcat-users.xml
+permissions:
+   - object: /var/www/html
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
+hooks:
+   BeforeInstall:
+    - location: Sample/scripts/installtomcat.sh
+      runas: root
+   
