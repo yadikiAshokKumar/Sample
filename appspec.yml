@@ -3,8 +3,7 @@ os: linux
 files:
    - source: /AntExample.war
      destination: /var/lib/tomcat7/webapps/
-   - source: /tomcat-users.xml
-     destination: /var/lib/tomcat7/conf/userss/
+  
 
 hooks:
    BeforeInstall:
